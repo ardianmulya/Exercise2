@@ -9,7 +9,12 @@ namespace Exercise2
     class Program
     {
         private int[] aan = new int[39];
+        int n;
 
+        public void input()
+        {
+
+        }
         static void Main(string[] args)
         {
         }
