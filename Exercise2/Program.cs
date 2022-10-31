@@ -172,7 +172,18 @@ namespace Exercise2
                         Console.WriteLine(". . . . . . . . . . . .");
                         Console.WriteLine("merge sort");
                         Console.WriteLine(". . . . . . . . . . . .");
-
+                        int[] aan = new int[20];
+                        Random rand = new Random();
+                        for (int i = 0; i < aan.Length; i++)
+                        {
+                            aan[i] = rand.Next(0, 101);
+                        }
+                        Console.WriteLine("Given Array");
+                        printArray(aan);
+                        P.sort(aan, 0, aan.Length - 1);
+                        Console.WriteLine("\nSorted array");
+                        printArray(aan);
+                        Console.Read();
                         break;
                     case 3:
                         Console.WriteLine("exit");
