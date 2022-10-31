@@ -10,6 +10,7 @@ namespace Exercise2
     {
         private int[] aan = new int[39];
         int n;
+        int i;
 
         public void input()
         {
@@ -27,6 +28,12 @@ namespace Exercise2
             Console.WriteLine("=====================");
             Console.WriteLine(" Enter array elements");
             Console.WriteLine("=====================");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                aan[i] = Int32.Parse(s1);
+            }
         }
         static void Main(string[] args)
         {
