@@ -23,6 +23,10 @@ namespace Exercise2
                 else
                     Console.WriteLine("\nArray should have minimun 1 and maximum 39 elements.\n");
             }
+            Console.WriteLine("");
+            Console.WriteLine("=====================");
+            Console.WriteLine(" Enter array elements");
+            Console.WriteLine("=====================");
         }
         static void Main(string[] args)
         {
