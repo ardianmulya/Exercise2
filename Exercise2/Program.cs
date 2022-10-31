@@ -134,6 +134,13 @@ namespace Exercise2
                 merge(arr, l, m, r);
             }
         }
+        static void printArray(int[] arr)
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n; ++i)
+                Console.Write(arr[i] + " ");
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
             Program P = new Program();
