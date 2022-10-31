@@ -1,6 +1,8 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -47,16 +49,28 @@ namespace Exercise2
                     aan[AW + 1] = aan[AW];
                     AW--;
                 }
-                aan[j + 1] = temp;
+                aan[AW + 1] = temp;
             }
         }
 
-        public void merge()
-        {
 
-        }
         static void Main(string[] args)
         {
+            Program P = new Program();
+            int pilihanmenu;
+
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("==================");
+                Console.WriteLine("1.insertion sort");
+                Console.WriteLine("2.merge sort");
+                Console.WriteLine("3.Exit");
+                Console.Write("Enter your choice (1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                
+            } while (pilihanmenu != 3);
         }
     }
 }
