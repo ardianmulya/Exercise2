@@ -35,6 +35,11 @@ namespace Exercise2
                 aan[i] = Int32.Parse(s1);
             }
         }
+
+        public void insertion_sort()
+        {
+
+        }
         static void Main(string[] args)
         {
         }
