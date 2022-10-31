@@ -50,6 +50,11 @@ namespace Exercise2
                 aan[j + 1] = temp;
             }
         }
+
+        public void merge()
+        {
+
+        }
         static void Main(string[] args)
         {
         }
