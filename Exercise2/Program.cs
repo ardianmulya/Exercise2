@@ -172,7 +172,7 @@ namespace Exercise2
                         Console.WriteLine(". . . . . . . . . . . .");
                         Console.WriteLine("merge sort");
                         Console.WriteLine(". . . . . . . . . . . .");
-                        int[] aan = new int[20];
+                        int[] aan = new int[39];
                         Random rand = new Random();
                         for (int i = 0; i < aan.Length; i++)
                         {
