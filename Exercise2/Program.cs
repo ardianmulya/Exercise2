@@ -69,7 +69,33 @@ namespace Exercise2
                 Console.Write("Enter your choice (1,2,3) : ");
                 pilihanmenu = Convert.ToInt32(Console.ReadLine());
 
-                
+                switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine(". . . . . . . . . . . .");
+                        Console.WriteLine("insertion sort");
+                        Console.WriteLine(". . . . . . . . . . . .");
+                        P.input();
+                        P.insertion_sort();
+
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine(". . . . . . . . . . . .");
+                        Console.WriteLine("merge sort");
+                        Console.WriteLine(". . . . . . . . . . . .");
+
+                        break;
+                    case 3:
+                        Console.WriteLine("exit");
+                        break;
+                    default:
+                        Console.WriteLine("error");
+                        break;
+                }
+                Console.WriteLine("\n\nPress Return to exit");
+                Console.ReadLine();
             } while (pilihanmenu != 3);
         }
     }
