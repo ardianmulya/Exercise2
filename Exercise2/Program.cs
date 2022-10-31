@@ -38,7 +38,17 @@ namespace Exercise2
 
         public void insertion_sort()
         {
-
+            for (int i = 1; i < n; i++)
+            {
+                int temp = aan[i];
+                int AW = i - 1;
+                while (AW >= 0 && aan[AW] > temp)
+                {
+                    aan[AW + 1] = aan[AW];
+                    AW--;
+                }
+                aan[j + 1] = temp;
+            }
         }
         static void Main(string[] args)
         {
